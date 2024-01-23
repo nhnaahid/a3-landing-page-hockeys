@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | Hockey's</title>
+    <!-- Tailwind & Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/da9af4df5f.js" crossorigin="anonymous"></script>
+    <!-- Tailwind custom Classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'p-color': '#FF4240',
+                        't-color': '#ffffff99',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom Styles -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .title-style {
+            color: #131318;
+            font-weight: 800;
+        }
+
+        .description-style {
+            color: rgba(19, 19, 24, 0.60);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+    </style>
+
+</head>
+
+<body class="font-manrope space-y-5">
+    <!-- Header section -->
+    <header class="container mx-auto px-5 space-y-10">
+        <!-- Navbar Section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <p class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-p-color">'</span>s</p>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-base">
+                    <li class="text-p-color"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end space-x-7">
+                <img class="hidden md:inline" src="Images/search.png" alt="">
+                <a class="btn bg-p-color text-white text-xs lg:text-sm">Get Ticket</a>
+            </div>
+        </div>
+        <!-- Banner section -->
+        <section class="relative">
+            <div class="carousel w-full relative">
+                <!-- First Slide -->
+                <div id="slide1" class="carousel-item relative w-full h-[70vh]">
+                    <img src="Images/1.png" class="w-full h-full object-cover lg:object-fill rounded-2xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+                <!-- Second Slide -->
+                <div id="slide2" class="carousel-item relative w-full h-[70vh]">
+                    <img src="Images/slider2.jpg" class="w-full h-full object-cover rounded-2xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner-meet hero box -->
+            <div
+                class="lg:w-2/5 rounded-xl bg-black text-white absolute lg:right-10 lg:bottom-10 p-5 space-y-2 my-3 lg:my-0">
+                <h1 class="text-xl font-extrabold">Meet all the heroes from the field</h1>
+                <p class="text-t-color text-sm">Hockey has produced many legendary players who are considered heroes in
+                    the sport. Meet the iconic figures from the world of hockey.</p>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main section -->
+    <main class="container mx-auto px-5 space-y-10">
+        <!-- Professional hockey club -->
+        <section>
+            <!-- hockey club text -->
+            <div class="border-y-2 border-dotted mt-60 md:mt-48 lg:mt-16">
+                <div class="text-center w-1/2 mx-auto space-y-2 py-7">
+                    <h1 class="title-style text-3xl">Professional Hockey Club</h1>
+                    <p class="description-style">Professional hockey is organized into various leagues around the world,
+                        and each league consists of numerous clubs or teams.</p>
+                </div>
+
+            </div>
+            <!-- hockey club progress cards -->
+            <div class="flex flex-col lg:flex-row items-center gap-3 my-10">
+                <div class=" text-center px-10 space-y-3">
+                    <div class="radial-progress text-red-500 rotate-180" style="--value:87;" role="progressbar"><span
+                            class="text-black font-extrabold rotate-180">87%</span></div>
+                    <h3 class="title-style text-lg">Prayer Facility</h3>
+                    <p class="description-style">Most teams have practice rinks within their facilities .</p>
+                </div>
+                <div class=" text-center px-10 space-y-3">
+                    <div class="radial-progress text-green-500 rotate-180" style="--value:95;" role="progressbar"><span
+                            class="text-black font-extrabold rotate-180">95%</span></div>
+                    <h3 class="title-style text-lg">Experienced Coach</h3>
+                    <p class="description-style">Most teams have practice rinks within their facilities .</p>
+                </div>
+                <div class=" text-center px-10 space-y-3">
+                    <div class="radial-progress text-amber-500 rotate-180" style="--value:90;" role="progressbar"><span
+                            class="text-black font-extrabold rotate-180">90%</span></div>
+                    <h3 class="title-style text-lg">Senior Player</h3>
+                    <p class="description-style">Most teams have practice rinks within their facilities .</p>
+                </div>
+                <div class=" text-center px-10 space-y-3">
+                    <div class="radial-progress text-blue-500 rotate-180" style="--value:80;" role="progressbar"><span
+                            class="text-black font-extrabold rotate-180">80%</span></div>
+                    <h3 class="title-style text-lg">Training Ground</h3>
+                    <p class="description-style">Most teams have practice rinks within their facilities .</p>
+                </div>
+            </div>
+        </section>
+        <!-- program section -->
+        <section>
+            <!-- program text -->
+            <div class="border-y-2 border-dotted mt-16 lg:mt-16">
+                <div class="text-center w-1/2 mx-auto py-7 space-y-3">
+                    <h1 class="title-style text-3xl">Program Sections</h1>
+                    <p class="description-style">Variety of initiatives and activities related to the sport of hockey.
+                        Here are a few common interpretations of the term . </p>
+                </div>
+
+            </div>
+            <!-- program cards -->
+            <div class="mt-10 grid grid-cols-1 grid-rows-3 lg:grid-cols-2 lg:grid-rows-2 gap-7 ">
+                <!-- card 1 -->
+                <div
+                    class=" bg-[linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url('/images/2.png')] bg-no-repeat bg-cover bg-center rounded-lg h-[50vh]">
+                    <div class="px-10 mt-5 lg:mt-24 space-y-2">
+                        <h2 class="title-style text-2xl text-white">Junior Program</h2>
+                        <p class="description-style text-white">These are initiatives designed to introduce and develop
+                            young players in the sport of hockey. Youth programs often include skill development camps,
+                            organized leagues for teenagers .</p>
+                        <a class="btn bg-p-color text-white border-none">Register Now!</a>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div
+                    class=" bg-[linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url('/images/3.png')] bg-no-repeat bg-cover bg-center rounded-lg h-[50vh] ">
+                    <div class="px-10 mt-5 lg:mt-24 space-y-2">
+                        <h2 class="title-style text-2xl text-white">Teenager Program</h2>
+                        <p class="description-style text-white">These are programs designed for non-professional players
+                            who have a passion for hockey. They may include adult recreational leagues.</p>
+                        <a class="btn bg-p-color text-white border-none">Register Now!</a>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div
+                    class=" bg-[linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url('/images/4.png')] bg-no-repeat bg-cover bg-center rounded-lg h-[50vh] lg:col-span-2">
+                    <div class="px-10 mt-5 lg:mt-32 space-y-2">
+                        <h2 class="title-style text-2xl text-white">Professional Program</h2>
+                        <p class="description-style text-white lg:w-3/5">This term can also encompass programs run by
+                            professional hockey teams, including player development programs and fan engagement
+                            activities.</p>
+                        <a class="btn bg-p-color text-white border-none">Register Now!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our new products -->
+        <section>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
