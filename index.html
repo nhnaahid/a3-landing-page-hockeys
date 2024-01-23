@@ -24,6 +24,7 @@
                         clifford: '#da373d',
                         'p-color': '#FF4240',
                         't-color': '#ffffff99',
+                        'f-color': '#FFFFFF',
                     }
                 }
             }
@@ -45,6 +46,12 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 26px;
+        }
+        .footer-desc, footer nav a{
+            color: #FFFFFF99;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
         }
     </style>
 
@@ -545,14 +552,64 @@
                     <div class="lg:col-span-2">
                         <a class="btn bg-p-color text-white border-none w-full">Send Message</a>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
+        <!-- social section -->
+        <section class="bg-[#13131807] rounded-xl">
+            <div class="w-full lg:w-1/3 mx-auto text-center space-y-5 p-5 lg:mb-[80px]">
+                <h2 class="title-style text-xl">Social Media</h2>
+                <div class="flex flex-wrap justify-center gap-8 text-xl">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+
+        </section>
     </main>
-
-    <footer>
-
+    <!-- footer section -->
+    <footer class="footer p-20 bg-[#131318] text-base-content grid grid-cols-6 grid-rows-3 lg:grid-cols-4 lg:grid-rows-1 lg:justify-items-center">
+        <!-- mx-auto grid items-center justify-items-center -->
+        <aside class="col-span-6 lg:col-span-1 mx-auto lg:mx-0 grid justify-items-center lg:justify-items-start text-center lg:text-start">
+            <div class="space-y-2">
+                <h2 class="text-xl text-white font-extrabold">Get In Touch</h2>
+                <p class="footer-desc">Feel free to reach out to us <br> using the contact information below .</p>
+            </div>
+            <div>
+                <img class="inline" src="Images/message-red.png" alt="">
+                <p class="inline footer-desc">hockeys@support.com</p>
+            </div>
+            <div>
+                <img class="inline" src="Images/contact-red.png" alt="">
+                <p class="inline footer-desc">(+62) 123-321-543</p>
+            </div>
+        </aside>
+        <nav class="col-span-3 lg:col-span-1 mx-auto lg:mx-0 grid justify-items-center lg:justify-items-start">
+            <header class="text-white font-bold text-base">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Leadership</a>
+            <a class="link link-hover">Careers</a>
+            <a class="link link-hover">News & Article</a>
+            <a class="link link-hover">Legal Notice</a>
+        </nav>
+        <nav class="col-span-3 lg:col-span-1 mx-auto lg:mx-0 grid justify-items-center lg:justify-items-start">
+            <header class="text-white font-bold ">Support</header>
+            <a class="link link-hover">Help Center</a>
+            <a class="link link-hover">FAQ</a>
+            <a class="link link-hover">Ticket Support</a>
+            <a class="link link-hover">Contact Us</a>
+        </nav>
+        <nav class="col-span-6 lg:col-span-1 mx-auto lg:mx-0 grid justify-items-center lg:justify-items-start">
+            <header class="text-white font-bold ">Services</header>
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private Lesson</a>
+            <a class="link link-hover">Hockeys for kids</a>
+            <a class="link link-hover">Hockeys for Adult</a>
+        </nav>
     </footer>
 </body>
 
